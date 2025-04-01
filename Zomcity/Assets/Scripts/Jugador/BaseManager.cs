@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using UnityEngine;
 
 public class BaseManager : MonoBehaviour
@@ -10,6 +11,7 @@ public class BaseManager : MonoBehaviour
     public List<GameObject> bobs;
     public List<int> foodPerBob;
     public float food = 3;
+    public TextMeshProUGUI foodText;
     public float hunger;
     public static int hungerState; //0: desmayados, 1: debiles, 2: normales, 3: bien alimentados
     public float cience;
@@ -42,5 +44,6 @@ public class BaseManager : MonoBehaviour
         }
         food = foodPerBob.Sum() + 2;
         foodPerBob.Clear();
+        foodText.text = "Comida: " + (food - hunger);
     }
 }
