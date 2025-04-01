@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 785abed3f6ea4244f940f843eecff2ec, type: 3}
+  m_Name: Sub-fusil
+  m_EditorClassIdentifier: 
+  type: 3
+  id: 21
+  objectName: Sub-Fusil
+  Sprite: {fileID: 21300000, guid: af3ac35a2a9c8cc4384d51226d1f74d3, type: 3}
+  weapon: {fileID: 11400000, guid: 562d6a54971dd9744b899bd7777e7c4a, type: 2}
+  armor: {fileID: 0}
+  equippable: 1
+  crafteable: 1
+  ingredients: 010000000500000005000000050000000b00000002000000

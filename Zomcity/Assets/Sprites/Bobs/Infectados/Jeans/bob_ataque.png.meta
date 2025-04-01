@@ -1,0 +1,768 @@
+fileFormatVersion: 2
+guid: 3d444d6a25637634285d5f9674e5461a
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bob_ataque_4
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 165
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7443ac0a8fa85e84f9c64d153797727d
+      internalID: -1270827317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bob_ataque_5
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 165
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26e8dab30c630e741a034959fc741d1d
+      internalID: -541175944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bob_ataque_1
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 165
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f79f330a7c8b64439fcaef4f1ba4391
+      internalID: -394313101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bob_ataque_2
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 165
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40c6d418054894a429f4eab030e3c0d0
+      internalID: -902954035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bob_ataque_3
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 165
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0b5c759ebe19fd47a925668befca59f
+      internalID: 2043191565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bob_ataque_15
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 133
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bea66fa0fa54134a9f695002a3edd47
+      internalID: 1892633002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bob_ataque_16
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 133
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d8fc4f6dcbec734886fb964f138ebb6
+      internalID: -2033315137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bob_ataque_17
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 133
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99b45cfe17243c345a2092953ab12a28
+      internalID: -1452130770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bob_ataque_18
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 133
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f770d6dc3a21bbe43b032764c20b10da
+      internalID: 184303083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bob_ataque_19
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 133
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 069e5cc470bfe7b4ea46a4cb393bb987
+      internalID: -2040842110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bob_ataque_20
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 101
+        width: 30
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 047b13338613ad448b802575d4c1694e
+      internalID: -1818621507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bob_ataque_22
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 101
+        width: 30
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d01d3043f8ace2a419851bbc0bf0995b
+      internalID: 1660800195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bob_ataque_24
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 101
+        width: 30
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d02875b1ba4c4ef41bc81ac7521922d4
+      internalID: 1680190602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bob_ataque_26
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 101
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35e6c056053c3034dbc28f27b8a091d3
+      internalID: 1997874245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bob_ataque_28
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 101
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fbcb1907a7862a47ab6af5b300c6d0f
+      internalID: -991540705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bob_ataque_31
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 69
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79eff93f7ba0c83459cf30924dd26a9e
+      internalID: 1376060273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bob_ataque_32
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 69
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0709a6c10c76c7042908572dfcead9e9
+      internalID: 1098451317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bob_ataque_33
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 69
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a695c44a85c45bc4dbdd9f81d217d807
+      internalID: 537330862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bob_ataque_34
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 69
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7d951de61fb88b44a671684903d018d
+      internalID: -987985395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bob_ataque_35
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 69
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2360017a70600884b85084bc42204a8c
+      internalID: -978939746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bob_ataque_44
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 37
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c01772a2e0d52447a501af366ec2e7d
+      internalID: 1316717383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bob_ataque_45
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 37
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c16e7e11108cd44fae5cafce60eb2f6
+      internalID: -285582135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bob_ataque_46
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 37
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae83f24ddcd285e4baa38af17efab08e
+      internalID: 517382991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bob_ataque_47
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 37
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e8e71a074251514190ecdc5770ca86b
+      internalID: -612378424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bob_ataque_48
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 37
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 020338cca3cb2ab449ea3f842cda19a3
+      internalID: 1124928588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bob_ataque_52
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 5
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 222de0ee8cfcb26438bc5ed2ae142718
+      internalID: 1851473631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bob_ataque_53
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 5
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3289b6c9071173d48b1c8b3cd1e3a9b0
+      internalID: 1850823626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bob_ataque_54
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 5
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2228230448bf4a14a95e9c0b8ffc45b8
+      internalID: -76691340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      bob_ataque_0: 1675404108
+      bob_ataque_1: -394313101
+      bob_ataque_10: 1818495585
+      bob_ataque_11: 595756318
+      bob_ataque_12: 2055094453
+      bob_ataque_13: 1992816920
+      bob_ataque_14: 877275898
+      bob_ataque_15: 1892633002
+      bob_ataque_16: -2033315137
+      bob_ataque_17: -1452130770
+      bob_ataque_18: 184303083
+      bob_ataque_19: -2040842110
+      bob_ataque_2: -902954035
+      bob_ataque_20: -1818621507
+      bob_ataque_21: 683853166
+      bob_ataque_22: 1660800195
+      bob_ataque_23: -789914409
+      bob_ataque_24: 1680190602
+      bob_ataque_25: 861092364
+      bob_ataque_26: 1997874245
+      bob_ataque_27: 1209353507
+      bob_ataque_28: -991540705
+      bob_ataque_29: 1449841137
+      bob_ataque_3: 2043191565
+      bob_ataque_30: -1760393129
+      bob_ataque_31: 1376060273
+      bob_ataque_32: 1098451317
+      bob_ataque_33: 537330862
+      bob_ataque_34: -987985395
+      bob_ataque_35: -978939746
+      bob_ataque_36: -1069863285
+      bob_ataque_37: 1113217094
+      bob_ataque_38: -1429088978
+      bob_ataque_39: 736256102
+      bob_ataque_4: -1270827317
+      bob_ataque_40: -977045385
+      bob_ataque_41: 1085728384
+      bob_ataque_42: 1720840676
+      bob_ataque_43: 1510982239
+      bob_ataque_44: 1316717383
+      bob_ataque_45: -285582135
+      bob_ataque_46: 517382991
+      bob_ataque_47: -612378424
+      bob_ataque_48: 1124928588
+      bob_ataque_49: 1742283704
+      bob_ataque_5: -541175944
+      bob_ataque_50: 1052911756
+      bob_ataque_51: 186868222
+      bob_ataque_52: 1851473631
+      bob_ataque_53: 1850823626
+      bob_ataque_54: -76691340
+      bob_ataque_8: 1923001445
+      bob_ataque_9: 795232534
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
