@@ -72,3 +72,6 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+Zomcity/Library/PackageManager/ProjectCache
+Zomcity/Temp/FSTimeGet-79fdbd50fa5547e43b92feca8d682844
+Zomcity/Temp/UnityLockfile
