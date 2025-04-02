@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -9,6 +10,8 @@ public class WeaponManagment : MonoBehaviour
     public GameObject timerObj;
     public GameObject weaponSprite;
     public GameObject weaponTrigger;
+    public GameObject bullet;
+    public GameObject pivot;
     public static float timer;
     public static bool impulse = false;
     public Weapons weapon;
@@ -50,16 +53,29 @@ public class WeaponManagment : MonoBehaviour
                 player.GetComponent<Rigidbody2D>().AddForce(CameraSight.direction2 * 20, ForceMode2D.Impulse);
                 Invoke("Detenerse", 0.1f);
                 timer = 0;
+                weaponTrigger.SetActive(false);
                 weaponTrigger.GetComponent<Animator>().SetBool("Ataque", true);
                 weaponSprite.GetComponent<Animator>().SetBool("Atacando", true);
             }
+            if (timer == weapon.reload && weapon.melee == false && Builder.isBuilding == false && impulse == false)
+            {
+                impulse = true;
+                player.GetComponent<Rigidbody2D>().AddForce(CameraSight.direction2 * -5, ForceMode2D.Impulse);
+                Invoke("Detenerse", 0.1f);
+                timer = 0;
+                weaponSprite.GetComponent<Animator>().SetBool("Atacando", true);
+                GameObject bulletPrefab = Instantiate(bullet,player.transform.position,pivot.transform.rotation);
+                bulletPrefab.GetComponent<Attack>().managment = this.gameObject.GetComponent<WeaponManagment>();
+                bulletPrefab.GetComponent<Rigidbody2D>().velocity = bulletPrefab.transform.up * 1000 * Time.deltaTime;
+                bulletPrefab = null;
+            }
         }
-        //no está implementado las armas a distancia
     }
     public void Detenerse()
     {
         //se vuelven a activar los controles y se desctivan las animaciones del trigger y su arma 
        impulse = false;
+        weaponTrigger.SetActive(true);
         weaponTrigger.GetComponent<Animator>().SetBool("Ataque", false);
         weaponSprite.GetComponent<Animator>().SetBool("Atacando", false);
     }
