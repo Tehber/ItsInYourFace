@@ -53,12 +53,12 @@ public class WeaponManagment : MonoBehaviour
                 player.GetComponent<Rigidbody2D>().AddForce(CameraSight.direction2 * 20, ForceMode2D.Impulse);
                 Invoke("Detenerse", 0.1f);
                 timer = 0;
-                weaponTrigger.SetActive(false);
                 weaponTrigger.GetComponent<Animator>().SetBool("Ataque", true);
                 weaponSprite.GetComponent<Animator>().SetBool("Atacando", true);
             }
             if (timer == weapon.reload && weapon.melee == false && Builder.isBuilding == false && impulse == false)
             {
+                weaponTrigger.SetActive(false);
                 impulse = true;
                 player.GetComponent<Rigidbody2D>().AddForce(CameraSight.direction2 * -5, ForceMode2D.Impulse);
                 Invoke("Detenerse", 0.1f);
@@ -66,7 +66,8 @@ public class WeaponManagment : MonoBehaviour
                 weaponSprite.GetComponent<Animator>().SetBool("Atacando", true);
                 GameObject bulletPrefab = Instantiate(bullet,player.transform.position,pivot.transform.rotation);
                 bulletPrefab.GetComponent<Attack>().managment = this.gameObject.GetComponent<WeaponManagment>();
-                bulletPrefab.GetComponent<Rigidbody2D>().velocity = bulletPrefab.transform.up * 1000 * Time.deltaTime;
+                bulletPrefab.GetComponent<Rigidbody2D>().velocity = bulletPrefab.transform.up.normalized * 5000 * Time.deltaTime;
+                Destroy(bulletPrefab, 7f);
                 bulletPrefab = null;
             }
         }
