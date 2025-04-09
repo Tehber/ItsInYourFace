@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,7 +32,7 @@ public class BaseManager : MonoBehaviour
         {
             hungerState = 1;
         }
-        else if (food < hunger / 2)
+        else if (food <= hunger / 2)
         {
             hungerState = 0;
         }
@@ -44,6 +45,6 @@ public class BaseManager : MonoBehaviour
         }
         food = foodPerBob.Sum() + 2;
         foodPerBob.Clear();
-        foodText.text = "Comida: " + (food - hunger);
+        foodText.text = "Comida: " + food + Environment.NewLine + "Hambre: " + hunger;
     }
 }

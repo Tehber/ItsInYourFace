@@ -67,7 +67,7 @@ public class WeaponManagment : MonoBehaviour
                 GameObject bulletPrefab = Instantiate(bullet,player.transform.position,pivot.transform.rotation);
                 bulletPrefab.GetComponent<Attack>().managment = this.gameObject.GetComponent<WeaponManagment>();
                 bulletPrefab.GetComponent<Rigidbody2D>().velocity = bulletPrefab.transform.up.normalized * 5000 * Time.deltaTime;
-                Destroy(bulletPrefab, 7f);
+                Destroy(bulletPrefab, 1f);
                 bulletPrefab = null;
             }
         }
