@@ -417,6 +417,7 @@
 "Assets/Scripts/ScriptableObjects/Objetos/Objects.cs"
 "Assets/Scripts/Utilidad/BobzGenerator.cs"
 "Assets/Scripts/Utilidad/NewBehaviourScript.cs"
+"Assets/Scripts/Utilidad/PathFinderScript.cs"
 "Assets/Scripts/Utilidad/SoldierGenerators.cs"
 -langversion:9.0
 /deterministic
