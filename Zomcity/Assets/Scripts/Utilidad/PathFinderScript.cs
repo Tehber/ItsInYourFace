@@ -32,7 +32,11 @@ public class PathFinderScript : MonoBehaviour
     }
     public void FindNeighbors()
     {
-        neighbors.Add(closedList[closedList.Count - 1] + new Vector4(0, 1));
+        Collider2D col = Physics2D.OverlapPoint(closedList[closedList.Count - 1] + new Vector4(0, 1));
+        if (col == null || col.isTrigger)
+        {
+            neighbors.Add(closedList[closedList.Count - 1] + new Vector4(0, 1));
+        }
         neighbors.Add(closedList[closedList.Count - 1] + new Vector4(0, -1));
         neighbors.Add(closedList[closedList.Count - 1] + new Vector4(1, 0));
         neighbors.Add(closedList[closedList.Count - 1] + new Vector4(1, 1));
