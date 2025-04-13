@@ -4,56 +4,70 @@ using UnityEngine;
 
 public class PathFinderScript : MonoBehaviour
 {
-    public List<Vector4> closedList = new List<Vector4>();
-    public List<Vector4> openList = new List<Vector4>();
+    public Vector4 wayPoint;
     public Vector2 goal;
     public Transform goalTransform;
     public List<Vector4> neighbors = new List<Vector4>();
-    public bool lol = false;
     private void Start()
     {
-        closedList.Add(new Vector3((float)System.Math.Round(transform.position.x), (float)System.Math.Round(transform.position.y), 0));
+        wayPoint = new Vector2((float)System.Math.Round(transform.position.x), (float)System.Math.Round(transform.position.y));
     }
     void Update()
     {
         goal = new Vector3((float)System.Math.Round(goalTransform.position.x), (float)System.Math.Round(goalTransform.position.y), 0);
-        if (new Vector2(closedList[closedList.Count-1].x, closedList[closedList.Count-1].y) != goal)
+        if (new Vector2((float)System.Math.Round(transform.position.x), (float)System.Math.Round(transform.position.y)) != goal)
         {
-            FindNeighbors();   
-        }
-        if (lol == false && new Vector2(closedList[closedList.Count - 1].x, closedList[closedList.Count - 1].y) == goal)
-        {
-            foreach(var v in closedList)
+            transform.position = Vector2.MoveTowards(transform.position, wayPoint, 0.01f);
+            if (transform.position == new Vector3(wayPoint.x, wayPoint.y,0))
             {
-                transform.position = new Vector2(v.x,v.y);
+                FindNeighbors();
             }
-            lol = true;
         }
     }
     public void FindNeighbors()
     {
-        Collider2D col = Physics2D.OverlapPoint(closedList[closedList.Count - 1] + new Vector4(0, 1));
-        if (col == null || col.isTrigger)
+        if (Physics2D.OverlapPoint(wayPoint + new Vector4(0, 1)) == null || Physics2D.OverlapPoint(wayPoint + new Vector4(0, 1)).isTrigger)
         {
-            neighbors.Add(closedList[closedList.Count - 1] + new Vector4(0, 1));
+            neighbors.Add(wayPoint + new Vector4(0, 1));
         }
-        neighbors.Add(closedList[closedList.Count - 1] + new Vector4(0, -1));
-        neighbors.Add(closedList[closedList.Count - 1] + new Vector4(1, 0));
-        neighbors.Add(closedList[closedList.Count - 1] + new Vector4(1, 1));
-        neighbors.Add(closedList[closedList.Count - 1] + new Vector4(1, -1));
-        neighbors.Add(closedList[closedList.Count - 1] + new Vector4(-1, 0));
-        neighbors.Add(closedList[closedList.Count - 1] + new Vector4(-1, 1));
-        neighbors.Add(closedList[closedList.Count - 1] + new Vector4(-1, -1));
+        if (Physics2D.OverlapPoint(wayPoint + new Vector4(0, -1)) == null || Physics2D.OverlapPoint(wayPoint + new Vector4(0, -1)).isTrigger)
+        {
+            neighbors.Add(wayPoint + new Vector4(0, -1));
+        }
+        if (Physics2D.OverlapPoint(wayPoint + new Vector4(1, 0)) == null || Physics2D.OverlapPoint(wayPoint + new Vector4(1, 0)).isTrigger)
+        {
+            neighbors.Add(wayPoint + new Vector4(1, 0));
+        }
+        if (Physics2D.OverlapPoint(wayPoint + new Vector4(1, 1)) == null || Physics2D.OverlapPoint(wayPoint + new Vector4(1, 1)).isTrigger)
+        {
+            neighbors.Add(wayPoint + new Vector4(1, 1));
+        }
+        if (Physics2D.OverlapPoint(wayPoint + new Vector4(1, -1)) == null || Physics2D.OverlapPoint(wayPoint + new Vector4(1, -1)).isTrigger)
+        {
+            neighbors.Add(wayPoint + new Vector4(1, -1));
+        }
+        if (Physics2D.OverlapPoint(wayPoint + new Vector4(-1, 0)) == null || Physics2D.OverlapPoint(wayPoint + new Vector4(-1, 0)).isTrigger)
+        {
+            neighbors.Add(wayPoint + new Vector4(-1, 0));
+        }
+        if (Physics2D.OverlapPoint(wayPoint + new Vector4(-1, 1)) == null || Physics2D.OverlapPoint(wayPoint + new Vector4(-1, 1)).isTrigger)
+        {
+            neighbors.Add(wayPoint + new Vector4(-1, 1));
+        }
+        if(Physics2D.OverlapPoint(wayPoint + new Vector4(-1, -1)) == null || Physics2D.OverlapPoint(wayPoint + new Vector4(-1, -1)).isTrigger)
+        {
+            neighbors.Add(wayPoint + new Vector4(-1, -1));
+        }
         for (int i = 0; i < neighbors.Count; i++)
         {
-            neighbors[i] = new Vector4(neighbors[i].x, neighbors[i].y, (float)System.Math.Round(Vector2.Distance(neighbors[i], goal) + Vector2.Distance(closedList[closedList.Count - 1], neighbors[i])), (float)System.Math.Round(Vector2.Distance(neighbors[i], goal)));
+            neighbors[i] = new Vector4(neighbors[i].x, neighbors[i].y, (float)System.Math.Round(Vector2.Distance(neighbors[i], goal) + Vector2.Distance(wayPoint, neighbors[i])), (float)System.Math.Round(Vector2.Distance(neighbors[i], goal)));
         }
         neighbors.Sort((a,b) => a.z.CompareTo(b.z));
         if (neighbors[0].z == neighbors[0].z)
         {
             neighbors.Sort((a, b) => a.w.CompareTo(b.w));
         }
-        closedList.Add(neighbors[0]);
+        wayPoint = neighbors[0];
         neighbors.Clear();
     }
 }
